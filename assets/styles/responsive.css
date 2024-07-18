@@ -3,6 +3,9 @@
   #header_area nav .navLink {
     display: none;
   }
+  nav .hamburger_menu {
+    display: block;
+  }
 
   /* banner area */
   #header_area .banner_area {
@@ -37,6 +40,6 @@
   }
   .banner_image_box .shape2 {
     right: 20px;
-    top: 200px;
+    top: 150px;
   }
 }
