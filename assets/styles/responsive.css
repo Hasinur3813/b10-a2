@@ -20,13 +20,29 @@
   }
 
   /* banner image box */
+  .banner_image_box {
+    margin-top: 100px;
+  }
   .banner_image_box .shape1 {
     right: 30px;
     bottom: 250px;
   }
   .banner_image_box .shape2 {
-    top: 50px;
+    top: -50px;
     right: -20px;
+  }
+
+  /* habits section */
+  #habits_section .excercises_card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #habits_section .excercises_card .card p {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #habits_section .excercises_card .card img {
+    width: 70%;
   }
 }
 
@@ -41,5 +57,22 @@
   .banner_image_box .shape2 {
     right: 20px;
     top: 150px;
+  }
+  .banner_image_box .shape2 {
+    padding: 10px 12px;
+  }
+  .banner_image_box .shape2 h4 {
+    font-size: 25px;
+  }
+}
+
+/* for tablet version */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  #habits_section .excercises_card {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0;
+  }
+  #habits_section .excercises_card .card img {
+    width: 70%;
   }
 }
