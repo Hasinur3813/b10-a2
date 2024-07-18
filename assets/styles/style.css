@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@import url("https://fonts.cdnfonts.com/css/miama");
+
+/* global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #000;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+:root {
+  --primary-color: rgb(255, 255, 255);
+  --secondary-color: rgba(255, 255, 255, 0.5);
+  --btn-bg-color: rgb(230, 83, 60);
+}
+.btn {
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+  border: none;
+}
+.btn a {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  padding: 16px 40px 16px 40px;
+}
+
+/* header styles starts here */
+#header_area {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  );
+}
+
+#header_area nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 57px 0 32px;
+}
+nav .brand a {
+  color: rgb(230, 83, 60);
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 120%;
+  text-decoration: none;
+  font-style: italic;
+}
+nav .hamburger_menu div {
+  width: 30px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: var(--primary-color);
+  margin-bottom: 3.5px;
+}
+nav ul {
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+  padding: 4px;
+  gap: 47px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li:hover a {
+  background: rgb(230, 83, 60);
+}
+nav ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 8px 20px 8px 20px;
+  transition: background-color 0.2s ease-in;
+  border-radius: 46px;
+}
+.active {
+  background: rgb(230, 83, 60);
+  border-radius: 46px;
+}
+
+/*  banner area */
+#header_area .banner_area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner_area .banner_content_box {
+  max-width: 520px;
+}
+.banner_content_box h1 {
+  color: var(--primary-color);
+  font-size: 4.9em;
+  font-weight: 900;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+.banner_content_box h1 #shape {
+  font-family: "Miama", sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+}
+.banner_content_box p {
+  margin: 28px 0;
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+.banner_content_box .banner_buttons {
+  display: flex;
+  gap: 14px;
+}
+.banner_buttons button:nth-last-child(1) {
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+}
+.banner_image_box {
+  position: relative;
+}
+.banner_image_box img {
+  width: 100%;
+}
+.banner_image_box .shape1,
+.banner_image_box .shape2 {
+  display: flex;
+  gap: 8px;
+  padding: 20px 23px;
+  justify-content: space-between;
+  max-width: 206px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54);
+}
+.banner_image_box .shape1 {
+  position: relative;
+  bottom: 150px;
+  right: 100px;
+}
+.banner_image_box .shape2 {
+  position: absolute;
+  top: 110px;
+  right: -60px;
+}
+.banner_image_box .shape1 .ball {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgb(230, 83, 60);
+}
+.banner_image_box .shape1 .text h5 {
+  color: var(--primary-color);
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+}
+.banner_image_box .shape1 .text p,
+.banner_image_box .shape2 p {
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.banner_image_box .shape2 {
+  flex-direction: column;
+}
+.banner_image_box .shape2 h4 {
+  color: var(--primary-color);
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 40px;
+  letter-spacing: 1px;
+}
+.banner_image_box .shape2 p {
+  font-size: 13px;
+}
