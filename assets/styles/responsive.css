@@ -1,3 +1,5 @@
+/* for small devices */
+
 @media screen and (max-width: 576px) {
   /* nav area */
   #header_area nav .navLink {
@@ -44,7 +46,41 @@
   #habits_section .excercises_card .card img {
     width: 70%;
   }
+
+  /* run section */
+
+  #run_section .run_container {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  #run_section .run_section_btn {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  /* training and exercises */
+  .excercise1 {
+    grid-column: 1 / 8;
+  }
+  .excercise2 {
+    grid-column: 8 / -1;
+  }
+  .excercise3 {
+    display: none;
+  }
+  .excercise4 {
+    grid-column: -13 / -7;
+  }
+  .excercise5 {
+    grid-column: -7 / -1;
+  }
+  .excercise6 {
+    display: none;
+  }
 }
+
+/* for extra small devices */
 
 @media screen and (max-width: 400px) {
   .banner_content_box .banner_buttons {
@@ -74,5 +110,12 @@
   }
   #habits_section .excercises_card .card img {
     width: 70%;
+  }
+
+  /* run section */
+
+  #run_section .run_container {
+    flex-direction: column;
+    gap: 100px;
   }
 }
