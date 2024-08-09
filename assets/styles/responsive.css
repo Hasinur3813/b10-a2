@@ -78,6 +78,50 @@
   .excercise6 {
     display: none;
   }
+  /* bmi calculator section */
+
+  .calculator_container .main_container {
+    flex-direction: column;
+  }
+  .calculator_container .calculate {
+    width: 100%;
+    margin-top: 42px;
+  }
+  /* .main_container .calculate form {
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+  } */
+}
+
+/* for tablet version */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  #habits_section .excercises_card {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0;
+  }
+  #habits_section .excercises_card .card img {
+    width: 70%;
+  }
+
+  /* run section */
+
+  #run_section .run_container {
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  /* bmi calculator */
+  .calculator_container .main_container {
+    flex-direction: column;
+    gap: 100px;
+  }
+  .calculator_container .calculate {
+    width: 100%;
+  }
+
+  .main_container .calculate form {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* for extra small devices */
@@ -100,22 +144,8 @@
   .banner_image_box .shape2 h4 {
     font-size: 25px;
   }
-}
 
-/* for tablet version */
-@media screen and (min-width: 577px) and (max-width: 992px) {
-  #habits_section .excercises_card {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 0;
-  }
-  #habits_section .excercises_card .card img {
-    width: 70%;
-  }
-
-  /* run section */
-
-  #run_section .run_container {
-    flex-direction: column;
-    gap: 100px;
+  .main_container .calculate form {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
 }
