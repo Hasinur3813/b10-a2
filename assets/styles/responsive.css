@@ -87,9 +87,16 @@
     width: 100%;
     margin-top: 42px;
   }
-  /* .main_container .calculate form {
-    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
-  } */
+
+  /* meet our teem */
+  .teem_members {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* footer area */
+  #footer .footer_content {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* for tablet version */
@@ -121,6 +128,23 @@
 
   .main_container .calculate form {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .member .trainer_name {
+    bottom: 10px;
+  }
+  .member .trainer_name h4 {
+    font-size: 16px;
+  }
+  /* footer */
+
+  #footer .footer_content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer_content .brand {
+    grid-column: 1/3;
+  }
+  .footer_content .brand p {
+    width: 443px;
   }
 }
 
