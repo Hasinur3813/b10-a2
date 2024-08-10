@@ -3,6 +3,7 @@
 @import url("https://fonts.cdnfonts.com/css/miama");
 
 /* global styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -63,10 +64,13 @@ body {
 #header_area {
   max-width: 1440px;
   margin: 0 auto;
-  background: linear-gradient(
-    180deg,
+  background-image: linear-gradient(
+    to bottom,
     rgb(17, 17, 17),
-    rgba(119, 119, 119, 0) 100%
+    rgb(35, 35, 35),
+    rgba(136, 136, 136, 0.3),
+    rgb(17, 17, 17),
+    rgb(17, 17, 17)
   );
 }
 
