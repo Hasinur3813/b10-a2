@@ -443,6 +443,7 @@ nav ul li a {
   background: rgba(255, 255, 255, 0.1);
   padding: 12px 40px 12px 20px;
   border: none;
+  width: 100%;
 }
 .main_container .calculate select {
   border-right: 15px solid transparent;

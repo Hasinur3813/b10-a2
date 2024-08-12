@@ -95,6 +95,9 @@
     width: 100%;
     margin-top: 42px;
   }
+  .main_container .calculate form {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 
   /* meet our teem */
   .teem_members {
@@ -188,7 +191,9 @@
   .banner_content_box .banner_buttons {
     flex-direction: column;
   }
-
+  .main_container .calculate form {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
   .banner_image_box .shape1 {
     right: -30px;
   }
@@ -201,9 +206,5 @@
   }
   .banner_image_box .shape2 h4 {
     font-size: 25px;
-  }
-
-  .main_container .calculate form {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
 }
