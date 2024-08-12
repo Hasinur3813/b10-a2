@@ -9,7 +9,7 @@
     display: block;
   }
   #header_area nav {
-    padding: 20px 0;
+    padding: 20px 0 100px;
   }
 
   /* banner area */
@@ -116,6 +116,21 @@
 /* for tablet version */
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
+  /* nav area */
+  #header_area nav .navLink {
+    display: none;
+  }
+  nav .hamburger_menu {
+    display: block;
+  }
+
+  /* banner area */
+  #header_area .banner_area {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  /* habits section */
   #habits_section .excercises_card {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 0;
