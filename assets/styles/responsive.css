@@ -8,6 +8,9 @@
   nav .hamburger_menu {
     display: block;
   }
+  #header_area nav {
+    padding: 20px 0;
+  }
 
   /* banner area */
   #header_area .banner_area {
@@ -60,6 +63,11 @@
   }
 
   /* training and exercises */
+  .overlay h4 {
+    font-size: 14px;
+    bottom: 5px;
+    left: 3px;
+  }
   .excercise1 {
     grid-column: 1 / 8;
   }
@@ -95,6 +103,12 @@
 
   /* footer area */
   #footer .footer_content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* unique section */
+  /* why chose us */
+  #why_chose_us .chose_us_cards {
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -145,6 +159,11 @@
   }
   .footer_content .brand p {
     width: 443px;
+  }
+  /* unique section */
+  /* why chose us */
+  #why_chose_us .chose_us_cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

@@ -32,6 +32,7 @@ body {
   font-weight: 900;
   line-height: 120%;
   margin: 14px 0;
+  text-align: center;
 }
 .section_title {
   color: var(--secondary-color);
@@ -40,6 +41,7 @@ body {
   line-height: 24px;
   letter-spacing: 0.3px;
   margin-bottom: 14px;
+  text-align: center;
 }
 
 .btn {
@@ -573,4 +575,50 @@ nav ul li a {
   line-height: 24px;
   letter-spacing: 0.3px;
   padding: 36px 0 0;
+}
+
+/* unique section */
+/* why chose us */
+
+#why_chose_us {
+  padding: 50px 0;
+}
+
+#why_chose_us .chose_us_cards {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+#why_chose_us .card {
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+#why_chose_us .card .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--dark-gray);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+#why_chose_us .card:hover .icon i {
+  transform: rotate(-45deg);
+}
+#why_chose_us .card .icon i {
+  font-size: 55px;
+  color: var(--btn-bg-color);
+  transition: all 0.3s;
+}
+
+#why_chose_us .card .content p {
+  color: var(--secondary-color);
+  margin-top: 10px;
 }
